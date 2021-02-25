@@ -3,6 +3,7 @@
     --footer-background-color: #f2f2f2;
     --footer-text-color: #76787b;
     --footer-border-color: #e1e3e5;
+    --search-bar-border-color: #dfe1e5;
 }
 * {
     box-sizing: border-box;
@@ -104,6 +105,23 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+#main-search_bar {
+    margin-bottom: 3.5rem;
+}
+#main-search_bar-div {
+    width: 58.4rem;
+    height: 4.4rem;
+    border-radius: 10rem;
+    border: var(--search-bar-border-color) 0.1rem solid;
+    display: flex;
+    justify-content: stretch;
+}
+#main-search_bar-div input {
+    font-size: 1.6rem;
+    flex-grow: 1;
+    border: none;
+    outline: none;
 }
 #main-buttons {
     display: flex;
