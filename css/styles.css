@@ -13,14 +13,14 @@ html {
     font-size: 62.5%;
 }
 body {
-    height: 100vh;
+    height: 99.9vh;
     font-size: 1.6rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* ESTILOS DEL HEADER */
@@ -75,20 +75,29 @@ height total: 599px
 logo: 194.4px (33%)
 searchbar and buttons: 160px (27%)
 language: 244.6px (40) */
+
 main {
     flex-grow: 1;
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
+    min-height: 30.4rem;
 }
+
+/* LOGO */
 #main-logo {
     height: 33%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
+#main-logo-img {
+    width: 40vw;
+    max-width: 272px;
+}
+
+/* BARRA Y BOTONES */
 #main-bar_and_buttons {
     height: 27%;
     display: flex;
@@ -96,6 +105,11 @@ main {
     justify-content: center;
     align-items: center;
 }
+#main-buttons {
+    display: flex;
+}
+
+/* LANGUAGE */
 #main-language_selector {
     height: 40%;
     display: flex;
@@ -104,14 +118,6 @@ main {
 #main-language_selector p {
     font-size:1.3rem ;
 }
-#main-logo-img {
-    width: 40vw;
-    max-width: 272px;
-}
-#main-buttons {
-    display: flex;
-}
-
 
 /* ESTILOS DEL FOOTER */
 footer {
