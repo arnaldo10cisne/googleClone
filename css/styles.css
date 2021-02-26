@@ -147,7 +147,33 @@ main {
     outline: none;
 }
 #main-buttons {
+    width: 53rem;
     display: flex;
+    justify-content: center;
+}
+.main-buttons_div button {
+    height: 3.6rem;
+    background-color: #f8f9fa;
+    border: white 1px solid;
+    font-size: 1.4rem;
+    color: #3c4043;
+    border-radius: 0.4rem;
+    padding: 0 1.6rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.main-buttons_div button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f8f8;
+    color: #222;
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+}
+#button-google_search {
+    margin-right: 0.5rem;
+}
+#button-feeling_lucky {
+    margin-left: 0.5rem;
 }
 
 /* LANGUAGE */
@@ -199,3 +225,4 @@ footer p{
 }
 
   /* MEDIA QUERIES */
+
